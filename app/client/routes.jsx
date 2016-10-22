@@ -2,37 +2,14 @@ import React from 'react';
 import {mount} from 'react-mounter';
 import {FlowRouter} from 'meteor/kadira:flow-router';
 
-// import AssignmentViewComponent from './components/AssignmentViewComponent';
-import DashboardViewComponent from './components/DashboardViewComponent';
+import CheckInViewComponent from './components/CheckInViewComponent';
 import {MainLayout} from './MainLayout';
-import {LoginLayout} from './LoginLayout';
-
 
 FlowRouter.route('/', {
   name: 'home',
   action: () => {
     mount(MainLayout, {
-      content: <DashboardViewComponent />
+      content: <CheckInViewComponent />
     });
   }
 });
-
-FlowRouter.route('/login', {
-  name: 'login',
-  action: () => {
-    mount(LoginLayout, {
-      content: <DashboardViewComponent />
-    });
-  }
-});
-
-/*
-FlowRouter.route('/assignment/:assignmentId', {
-  name: 'assignment',
-  action: (params) => {
-    mount(MainLayout, {
-      content: <AssignmentViewComponent assignmentId={params.assignmentId} />
-    });
-  }
-});
-*/

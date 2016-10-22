@@ -4,7 +4,9 @@ export const MainLayout = ({content}) => (
   <div className='main-layout'>
     <header>
       <h1>
-        HomeworkTracker
+        <div>
+          <img src='./images/moona.png' alt='moona-logo' className='header-icon' />
+        </div>
       </h1>
     </header>
 
@@ -12,11 +14,8 @@ export const MainLayout = ({content}) => (
 
     <footer>
       <small>
-        <a href='http://madewithloveinbaltimore.org' id='made-love'>Made with <span className='footer__heart'>&hearts;</span> in Baltimore</a> | Powered by Meteor & React | <a href='https://github.com/danlee2/HomeworkTracker'>Github Repo</a>
+        Made with <span className='footer__heart'>&hearts;</span> in St. Louis | Powered by Meteor & React 
       </small>
     </footer>
   </div>
 )
-
-
-
