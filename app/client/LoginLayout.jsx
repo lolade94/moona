@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const MainLayout = ({content}) => (
+export const LoginLayout = ({content}) => (
   <div className='main-layout'>
     <header>
       <h1>
-        HomeworkTracker
+        Login Page
       </h1>
     </header>
 
